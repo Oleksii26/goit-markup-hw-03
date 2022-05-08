@@ -10,6 +10,8 @@
   --accent-bg-color: #2f303a;
   --main-bg-cl: #ffffff;
   --btn-hover-cl: #188ce8;
+  --section-team-color: #f5f4fa;
+  --our-team-color: #ffffff;
 }
 .visually-hidden {
   position: absolute;
@@ -41,6 +43,9 @@ p {
 }
 img {
   display: block;
+}
+header {
+  border: 1px solid #ececec;
 }
 .container {
   outline: 1px solid none;
@@ -134,7 +139,6 @@ img {
 
 .section-hero {
   background-color: var(--accent-bg-color);
-  height: 600px;
   align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -159,17 +163,16 @@ img {
 }
 
 .active-btn {
-  width: 200px;
-  height: 50px;
+  padding: 10px 32px;
   left: 700px;
   top: 430px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 .btn {
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -207,11 +210,13 @@ img {
 .Benefits-list {
   list-style: none;
   display: flex;
-  height: 101px;
-  width: 1170px;
 }
 .benefits-block {
   width: 270px;
+  margin-right: 30px;
+}
+.benefits-block:last-child {
+  margin-right: 0;
 }
 .Benefits {
   margin-bottom: 10px;
@@ -234,17 +239,18 @@ img {
 .our-team {
   list-style: none;
   display: flex;
-  width: 1170px;
-  height: 368px;
 }
 .our-team-item {
   margin-right: 30px;
-  width: 270px;
-  height: 368px;
-  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--our-team-color);
 }
-.our-team-item img {
-  margin-bottom: 30px;
+.wraper {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .our-team-item .name {
   margin-bottom: 10px;
@@ -252,7 +258,9 @@ img {
 .our-team-item:last-child {
   margin-right: 0;
 }
-
+.about {
+  padding-top: 0;
+}
 .about .list {
   display: flex;
 }
@@ -273,7 +281,7 @@ img {
   letter-spacing: 0.03em;
 }
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--section-team-color);
 }
 .position {
   font-family: var(--main-font);
@@ -291,7 +299,6 @@ img {
 }
 .btn-container .btn-list {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin-bottom: 50px;
 }
@@ -305,7 +312,7 @@ img {
 .item-btn:last-child {
   margin-right: 0;
 }
-.btn-page-2 {
+.btn-page-two {
   list-style: none;
   font-family: var(--main-font);
   font-style: normal;
@@ -313,21 +320,22 @@ img {
   font-size: 16px;
   line-height: 1.62;
   color: var(--secondary-text-cl);
-  background-color: #f5f4fa;
+  background-color: var(--section-team-color);
   cursor: pointer;
   letter-spacing: 0.03em;
   border: none;
   height: 38px;
   border-radius: 4px;
 }
-.btn-page-2:hover {
+.btn-page-two:hover,
+.btn-page-two:focus {
   color: var(--main-bg-cl);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
-.btn-page-2:focus {
-  color: var(--main-bg-cl);
-  background-color: var(--accent-color);
-}
+
 .catalog {
   list-style: none;
   display: flex;
@@ -374,6 +382,7 @@ img {
 .footer-address {
   list-style: none;
   font-style: normal;
+  margin-top: 20px;
 }
 
 .list-1 {
@@ -384,6 +393,10 @@ img {
   color: var(--main-bg-cl);
   text-decoration: none;
   letter-spacing: 0.03em;
+}
+.list-1:hover,
+.list-1:focus {
+  color: var(--accent-color);
 }
 .list-2 {
   font-family: var(--main-font);
@@ -411,6 +424,11 @@ img {
   padding-bottom: 60px;
 }
 .logo-footer {
-  margin-bottom: 20px;
-  display: block;
+  margin-right: 0;
+}
+.footer-items {
+  margin-bottom: 9px;
+}
+.footer-items:last-child {
+  margin-bottom: 0;
 }
