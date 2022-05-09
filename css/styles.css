@@ -12,6 +12,7 @@
   --btn-hover-cl: #188ce8;
   --section-team-color: #f5f4fa;
   --our-team-color: #ffffff;
+  --header-color: #ececec;
 }
 .visually-hidden {
   position: absolute;
@@ -44,8 +45,8 @@ p {
 img {
   display: block;
 }
-header {
-  border: 1px solid #ececec;
+.header-portfolio {
+  border-bottom: 1px solid var(--header-color);
 }
 .container {
   outline: 1px solid none;
@@ -62,6 +63,7 @@ header {
 .list {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 /*section header*/
 
@@ -159,13 +161,13 @@ header {
   height: 120px;
   text-align: center;
   margin-bottom: 30px;
-  margin-left: 252px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .active-btn {
   padding: 10px 32px;
-  left: 700px;
-  top: 430px;
+
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -313,9 +315,7 @@ header {
   margin-right: 0;
 }
 .btn-page-two {
-  list-style: none;
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -324,7 +324,7 @@ header {
   cursor: pointer;
   letter-spacing: 0.03em;
   border: none;
-  height: 38px;
+  padding: 6px 22px;
   border-radius: 4px;
 }
 .btn-page-two:hover,
@@ -337,9 +337,7 @@ header {
 }
 
 .catalog {
-  list-style: none;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 .catalog h2 {
@@ -363,7 +361,7 @@ header {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.catalog-items:nth-child(3n + 3) {
+.catalog-items:nth-child(3n) {
   margin-right: 0;
 }
 .catalog-items:nth-child(n + 7) {
@@ -382,7 +380,6 @@ header {
 .footer-address {
   list-style: none;
   font-style: normal;
-  margin-top: 20px;
 }
 
 .list-1 {
@@ -428,6 +425,9 @@ header {
 }
 .footer-items {
   margin-bottom: 9px;
+}
+.footer-items:first-child {
+  margin-top: 20px;
 }
 .footer-items:last-child {
   margin-bottom: 0;
