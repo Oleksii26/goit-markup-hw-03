@@ -368,8 +368,6 @@ img {
   margin-bottom: 0;
 }
 .img-catalog {
-  width: 370px;
-  height: 110px;
   border: 1px solid #eeeeee;
   border-top: none;
   padding-top: 20px;
@@ -380,6 +378,7 @@ img {
 .footer-address {
   list-style: none;
   font-style: normal;
+  margin-top: 20px;
 }
 
 .list-1 {
@@ -426,9 +425,7 @@ img {
 .footer-items {
   margin-bottom: 9px;
 }
-.footer-items:first-child {
-  margin-top: 20px;
-}
+
 .footer-items:last-child {
   margin-bottom: 0;
 }
